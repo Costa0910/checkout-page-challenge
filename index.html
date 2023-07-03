@@ -3,8 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/base.css">
+    <link rel="stylesheet" href="./dist/base.css" />
     <title>Checkout page challenge</title>
   </head>
-  <body></body>
+  <body>
+    <!-- No header for this page -->
+
+    <main class="main">
+      <h1 class="title">Checkout</h1>
+      <div class="checkout">
+        <section class="checkout__items">
+          <div class="checkout__items-group">
+            <div class="checkout__item">
+              <div class="item-img">
+                <img src="./images/airpods.png" alt="Vintage Backbag" />
+              </div>
+              <div class="item__description">
+                <h3>Vintage Backbag</h3>
+                <p>
+                  <span class="orange">$54.99</span>
+                  <s>$94.99</s>
+                </p>
+                <div class="item__buttons">
+                  <button class="item__quantity-btn">-</button>
+                  <span class="item__quantity">1</span>
+                  <button class="item__quantity-btn">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__item">
+              <div class="item-img">
+                <img src="./images/airpods.png" alt="Levi Shoes" />
+              </div>
+              <div class="item__description">
+                <h3>Levi Shoes</h3>
+                <p>
+                  <span class="orange">$74.99</span>
+                  <s>$124.99</s>
+                </p>
+                <div class="item__buttons">
+                  <button class="item__quantity-btn">-</button>
+                  <span class="item__quantity">1</span>
+                  <button class="item__quantity-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items__total-cost">
+            <p class="shipping">
+              <span>Shipping</span>
+              <span>$19</span>
+            </p>
+            <p>
+              <span class="total-cost__title">Total</span>
+              <span class="total-cost__price">$148.98</span>
+            </p>
+          </div>
+        </section>
+        <section class="checkout__form"></section>
+      </div>
+    </main>
+    <footer class="copyright">
+      <p>
+        created by
+        <a href="https://devchallenges.io/portfolio/Costa0910">Armando Costa</a>
+        - devChallenges.io
+      </p>
+    </footer>
+  </body>
 </html>
