@@ -60,7 +60,150 @@
             </p>
           </div>
         </section>
-        <section class="checkout__form"></section>
+        <section class="checkout__form">
+          <form action="" class="form">
+            <div class="checkout__form-info">
+              <h2>Contact information</h2>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                  name="user_email"
+                />
+              </div>
+              <div class="form__group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone"
+                  name="user_phone"
+                />
+              </div>
+            </div>
+
+            <div class="checkout__form-address">
+              <h2>Shipping address</h2>
+              <div class="form__group">
+                <label for="full-name">Full name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  placeholder="Enter your full name"
+                  required
+                  name="user_full-name"
+                />
+              </div>
+              <div class="form__group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Your address.."
+                  required
+                  name="user_address"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  placeholder="Your city.."
+                  required
+                  name="user_city"
+                />
+              </div>
+
+              <div class="form__group country_postal-code">
+                <div class="country">
+                  <label for="country">Country</label>
+                  <input type="text" name="country" id="country" list="countriesTable">
+
+                  <datalist id="countriesTable" aria-placeholder="list of countries">
+                    <option value="Afghanistan">
+                    <option value="Albania">
+                    <option value="Algeria">
+                    <option value="American Samoa">
+                    <option value="Andorra">
+                    <option value="Angola">
+                    <option value="Anguilla">
+                    <option value="Antarctica">
+                    <option value="Antigua and Barbuda">
+                    <option value="Argentina">
+                    <option value="Armenia">
+                    <option value="Aruba">
+                    <option value="Australia">
+                    <option value="Austria">
+                    <option value="Azerbaijan">
+                    <option value="Bahamas">
+                    <option value="Bahrain">
+                    <option value="Bangladesh">
+                    <option value="Barbados">
+                    <option value="Belarus">
+                    <option value="Belgium">
+                    <option value="Belize">
+                    <option value="Benin">
+                    <option value="Bermuda">
+                    <option value="Bhutan">
+                    <option value="Bolivia">
+                    <option value="Bosnia and Herzegovina">
+                    <option value="Botswana">
+                    <option value="Bouvet Island">
+                    <option value="Brazil">
+                    <option value="British Indian Ocean Territory">
+                    <option value="Brunei Darussalam">
+                    <option value="Bulgaria">
+                    <option value="Burkina Faso">
+                    <option value="Burundi">
+                    <option value="Cambodia">
+                    <option value="Cameroon">
+                    <option value="Canada">
+                    <option value="Cape Verde">
+                    <option value="Cayman Islands">
+                    <option value="Central African Republic">
+                    <option value="Chad">
+                    <option value="Chile">
+                    <option value="China">
+                    <option value="Christmas Island">
+                    <option value="Cocos (Keeling) Islands">
+                    <option value="Colombia">
+                    <option value="Comoros">
+                    <option value="Congo">>
+                    <option value="Cook Islands">
+                    <option value="Costa Rica">
+                    <option value="Cote D'ivoire">
+                    <option value="Croatia">
+                    <option value="Cuba">
+                    <option value="Czech Republic">
+                    <option value="Other">
+                  </datalist>
+                </div>
+                <div class="postal-code">
+                  <label for="postal-code">Postal code</label>
+                  <input
+                    type="text"
+                    id="postal-code"
+                    placeholder="Your postal code.."
+                    required
+                    name="user_postal-code"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="save-info">
+              <input type="checkbox" id="save-info"  name="save-info"/>
+              <label for="save-info">Save this information for next time</label>
+            </div>
+            <div class="button">
+              <button type="submit">Continue</button>
+            </div>
+          </form>
+        </section>
       </div>
     </main>
     <footer class="copyright">
