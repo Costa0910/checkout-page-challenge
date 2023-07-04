@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/base.css" />
+    <meta name="viewport" content="width=device-width, initia l-scale=1.0" />
+    <link rel="stylesheet" href="./dist/index.css" />
+
+    <!-- GOOGLE ICONS LINK -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Checkout page challenge</title>
   </head>
   <body>
@@ -16,7 +22,7 @@
           <div class="checkout__items-group">
             <div class="checkout__item">
               <div class="item-img">
-                <img src="./images/airpods.png" alt="Vintage Backbag" />
+                <img src="./img/photo1.png" alt="Vintage Backbag" />
               </div>
               <div class="item__description">
                 <h3>Vintage Backbag</h3>
@@ -33,7 +39,7 @@
             </div>
             <div class="checkout__item">
               <div class="item-img">
-                <img src="./images/airpods.png" alt="Levi Shoes" />
+                <img src="./img/photo2.png" alt="Levi Shoes" />
               </div>
               <div class="item__description">
                 <h3>Levi Shoes</h3>
@@ -60,28 +66,31 @@
             </p>
           </div>
         </section>
+
         <section class="checkout__form">
           <form action="" class="form">
             <div class="checkout__form-info">
               <h2>Contact information</h2>
               <div class="form__group">
-                <label for="email">Email</label>
+                <label for="email">E-mail</label>
                 <input
                   type="email"
                   id="email"
-                  placeholder="Enter your email"
+                  placeholder="Enter your email.."
                   required
                   name="user_email"
                 />
+                <span class="material-symbols-outlined"> mail </span>
               </div>
               <div class="form__group">
                 <label for="phone">Phone</label>
                 <input
                   type="tel"
                   id="phone"
-                  placeholder="Enter your phone"
+                  placeholder="Enter your phone.."
                   name="user_phone"
                 />
+                <span class="material-symbols-outlined"> call </span>
               </div>
             </div>
 
@@ -96,6 +105,7 @@
                   required
                   name="user_full-name"
                 />
+                <span class="material-symbols-outlined"> account_circle </span>
               </div>
               <div class="form__group">
                 <label for="address">Address</label>
@@ -106,6 +116,7 @@
                   required
                   name="user_address"
                 />
+                <span class="material-symbols-outlined"> home </span>
               </div>
 
               <div class="form__group">
@@ -117,71 +128,82 @@
                   required
                   name="user_city"
                 />
+                <span class="material-symbols-outlined"> location_city </span>
               </div>
 
               <div class="form__group country_postal-code">
                 <div class="country">
                   <label for="country">Country</label>
-                  <input type="text" name="country" id="country" list="countriesTable">
+                  <input
+                    type="text"
+                    name="country"
+                    id="country"
+                    list="countriesTable"
+                    placeholder="Choose a country"
+                  />
 
-                  <datalist id="countriesTable" aria-placeholder="list of countries">
-                    <option value="Afghanistan">
-                    <option value="Albania">
-                    <option value="Algeria">
-                    <option value="American Samoa">
-                    <option value="Andorra">
-                    <option value="Angola">
-                    <option value="Anguilla">
-                    <option value="Antarctica">
-                    <option value="Antigua and Barbuda">
-                    <option value="Argentina">
-                    <option value="Armenia">
-                    <option value="Aruba">
-                    <option value="Australia">
-                    <option value="Austria">
-                    <option value="Azerbaijan">
-                    <option value="Bahamas">
-                    <option value="Bahrain">
-                    <option value="Bangladesh">
-                    <option value="Barbados">
-                    <option value="Belarus">
-                    <option value="Belgium">
-                    <option value="Belize">
-                    <option value="Benin">
-                    <option value="Bermuda">
-                    <option value="Bhutan">
-                    <option value="Bolivia">
-                    <option value="Bosnia and Herzegovina">
-                    <option value="Botswana">
-                    <option value="Bouvet Island">
-                    <option value="Brazil">
-                    <option value="British Indian Ocean Territory">
-                    <option value="Brunei Darussalam">
-                    <option value="Bulgaria">
-                    <option value="Burkina Faso">
-                    <option value="Burundi">
-                    <option value="Cambodia">
-                    <option value="Cameroon">
-                    <option value="Canada">
-                    <option value="Cape Verde">
-                    <option value="Cayman Islands">
-                    <option value="Central African Republic">
-                    <option value="Chad">
-                    <option value="Chile">
-                    <option value="China">
-                    <option value="Christmas Island">
-                    <option value="Cocos (Keeling) Islands">
-                    <option value="Colombia">
-                    <option value="Comoros">
-                    <option value="Congo">>
-                    <option value="Cook Islands">
-                    <option value="Costa Rica">
-                    <option value="Cote D'ivoire">
-                    <option value="Croatia">
-                    <option value="Cuba">
-                    <option value="Czech Republic">
-                    <option value="Other">
+                  <datalist
+                    id="countriesTable"
+                    aria-placeholder="list of countries"
+                  >
+                    <option value="Afghanistan"></option>
+                    <option value="Albania"></option>
+                    <option value="Algeria"></option>
+                    <option value="American Samoa"></option>
+                    <option value="Andorra"></option>
+                    <option value="Angola"></option>
+                    <option value="Anguilla"></option>
+                    <option value="Antarctica"></option>
+                    <option value="Antigua and Barbuda"></option>
+                    <option value="Argentina"></option>
+                    <option value="Armenia"></option>
+                    <option value="Aruba"></option>
+                    <option value="Australia"></option>
+                    <option value="Austria"></option>
+                    <option value="Azerbaijan"></option>
+                    <option value="Bahamas"></option>
+                    <option value="Bahrain"></option>
+                    <option value="Bangladesh"></option>
+                    <option value="Barbados"></option>
+                    <option value="Belarus"></option>
+                    <option value="Belgium"></option>
+                    <option value="Belize"></option>
+                    <option value="Benin"></option>
+                    <option value="Bermuda"></option>
+                    <option value="Bhutan"></option>
+                    <option value="Bolivia"></option>
+                    <option value="Bosnia and Herzegovina"></option>
+                    <option value="Botswana"></option>
+                    <option value="Bouvet Island"></option>
+                    <option value="Brazil"></option>
+                    <option value="British Indian Ocean Territory"></option>
+                    <option value="Brunei Darussalam"></option>
+                    <option value="Bulgaria"></option>
+                    <option value="Burkina Faso"></option>
+                    <option value="Burundi"></option>
+                    <option value="Cambodia"></option>
+                    <option value="Cameroon"></option>
+                    <option value="Canada"></option>
+                    <option value="Cape Verde"></option>
+                    <option value="Cayman Islands"></option>
+                    <option value="Central African Republic"></option>
+                    <option value="Chad"></option>
+                    <option value="Chile"></option>
+                    <option value="China"></option>
+                    <option value="Christmas Island"></option>
+                    <option value="Cocos (Keeling) Islands"></option>
+                    <option value="Colombia"></option>
+                    <option value="Comoros"></option>
+                    <option value="Congo">></option>
+                    <option value="Cook Islands"></option>
+                    <option value="Costa Rica"></option>
+                    <option value="Cote D'ivoire"></option>
+                    <option value="Croatia"></option>
+                    <option value="Cuba"></option>
+                    <option value="Czech Republic"></option>
+                    <option value="Add your country"></option>
                   </datalist>
+                  <span class="material-symbols-outlined"> location_city </span>
                 </div>
                 <div class="postal-code">
                   <label for="postal-code">Postal code</label>
@@ -192,11 +214,14 @@
                     required
                     name="user_postal-code"
                   />
+                  <span class="material-symbols-outlined">
+                    markunread_mailbox
+                  </span>
                 </div>
               </div>
             </div>
             <div class="save-info">
-              <input type="checkbox" id="save-info"  name="save-info"/>
+              <input type="checkbox" id="save-info" name="save-info" />
               <label for="save-info">Save this information for next time</label>
             </div>
             <div class="button">
